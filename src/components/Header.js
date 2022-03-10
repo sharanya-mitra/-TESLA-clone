@@ -150,13 +150,16 @@ const RMenu = styled.div`
     padding: 10px;
     flex-wrap: nowrap;
   }
+ 
 `;
 const BurgerMenu = styled.div`
   position: fixed;
   top: 0px;
   right: 0px;
   bottom: 0px;
+  transition-duration: 1.1s;
   transform: translateX(${(props) => (props.show ? "0px" : "100%")});
+  
   display: flex;
   background-color: white;
   flex-direction: column;

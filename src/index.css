@@ -10,6 +10,7 @@
 body {
   width: 100%;
   overflow-x: hidden;
+ 
 }
 
 @keyframes animationDown {
@@ -27,10 +28,9 @@ body {
     transform: translateY(3px);
   }
 }
-a
-{
+a{
   text-decoration: none;
-}
+ }
 img.logo {
   width: 120px;
   height: 16px;

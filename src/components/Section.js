@@ -25,6 +25,7 @@ function Section({ title, image, btnleft, btnright, textdown,textdown2 }) {
 
 export default Section;
 
+
 const Wrap = styled.div`
   display: flex;
   width: 100vw;
@@ -36,13 +37,16 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-`;
+  `;
 const ItemText = styled.div`
   padding-top: 17vh;
   text-align: center;
   h1 {
     font-size: 2.5rem;
     padding-bottom: 1rem;
+  }
+  a{
+    text-decoration: underline;
   }
 `;
 const ButtonGroup = styled.div`
