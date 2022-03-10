@@ -4,15 +4,17 @@ import Fade from "react-reveal/Fade";
 function Section({ title, image, btnleft, btnright, textdown,textdown2 }) {
   return (
     <Wrap bgImage={image}>
+      <Fade bottom>
       <ItemText>
         <h1>{title}</h1>
         <p>{textdown}<a href="">{textdown2}</a>
         </p>
       </ItemText>
+      </Fade>
       <Buttons>
         <ButtonGroup>
-          <RightButton>{btnleft}</RightButton>
-          {btnright && <LeftButton>{btnright}</LeftButton>}
+          <Fade left> <RightButton>{btnleft}</RightButton></Fade>
+          {btnright && <Fade right> <LeftButton>{btnright}</LeftButton></Fade>}
           
         </ButtonGroup>
         <DownArrow src="/images/down-arrow.svg" />
